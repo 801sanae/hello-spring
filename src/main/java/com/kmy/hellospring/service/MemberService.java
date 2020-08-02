@@ -3,12 +3,11 @@ package com.kmy.hellospring.service;
 import com.kmy.hellospring.domain.Member;
 import com.kmy.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
