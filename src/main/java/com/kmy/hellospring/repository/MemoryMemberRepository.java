@@ -1,14 +1,20 @@
 package com.kmy.hellospring.repository;
 
 import com.kmy.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
 
     private static long sequnce = 0L;
+
+    public MemoryMemberRepository() {
+        System.out.println(this.getClass());
+    }
 
     @Override
     public Member save(Member member) {
