@@ -3,9 +3,9 @@ package com.kmy.hellospring.service;
 import com.kmy.hellospring.domain.Member;
 import com.kmy.hellospring.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired; // feild injection
-import org.springframework.boot.test.context.SpringBootTest; // 스프링 컨테이너와 테스트를 함께 실행한다.
-import org.springframework.transaction.annotation.Transactional; // commit 직전, rollback
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;

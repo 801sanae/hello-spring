@@ -1,9 +1,15 @@
 package com.kmy.hellospring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
 
+    @Id //pk설정.
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // db가 생성해주는거
     private Long id;
 
+//    @Column(name= "username")
     private String name;
 
 
