@@ -21,10 +21,17 @@ public class MemberService {
     }
 
     public long join(Member member){
-        //중복회원 검증
-        validateDuplicateMember(member);
-        memberRepository.save(member); // ctrl + t -> Extract Method (option + cmd + m)
-        return member.getId();
+//        long start = System.currentTimeMillis();
+//        try {
+            //중복회원 검증
+            validateDuplicateMember(member);
+            memberRepository.save(member); // ctrl + t -> Extract Method (option + cmd + m)
+            return member.getId();
+//        }finally {
+//            long finish = System.currentTimeMillis();
+//            long timeRes = finish - start;
+//            System.out.println("join finish : " + timeRes);
+//        }
     }
 
     private void validateDuplicateMember(Member member) {

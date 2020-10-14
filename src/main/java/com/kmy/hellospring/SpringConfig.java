@@ -38,4 +38,10 @@ public class SpringConfig {
 //        return new JdbcMemberRepository(dataSource);
 //        return new JpaMemberRepository(em);
 //    }
+
+    // 명시적으로 선언해주는 것도 좋음.
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return  new TimeTraceAop();
+//    }
 }
